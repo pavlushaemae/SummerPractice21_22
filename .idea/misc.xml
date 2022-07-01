@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/pavel/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/pavel/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_favourites.xml" value="0.1" />
+        <entry key="..\:/Users/pavel/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_music.xml" value="0.1" />
+        <entry key="..\:/Users/pavel/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_profile.xml" value="0.21785714285714286" />
+        <entry key="..\:/Users/pavel/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_settings.xml" value="0.1" />
+        <entry key="..\:/Users/pavel/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_test_for_cat.xml" value="0.1" />
+        <entry key="..\:/Users/pavel/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_videos.xml" value="0.1" />
+        <entry key="..\:/Users/pavel/AndroidStudioProjects/MyApplication2/app/src/main/res/menu/menu_main.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
