@@ -6,23 +6,24 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.myapplication.databinding.FragmentSettingsBinding
 
-
-class SettingsFragment: Fragment(R.layout.fragment_settings) {
-    private  var _binding: FragmentSettingsBinding? = null
+class SettingsFragment : Fragment(R.layout.fragment_settings) {
+    private var _binding: FragmentSettingsBinding? = null
     private val binding get() = _binding!!
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentSettingsBinding.bind(view)
 
-        with(binding){
+        with(binding) {
             btnSettingsToTesting.setOnClickListener {
                 val bundle = Bundle()
                 bundle.putString(
                     "ARG_TEXT",
                     (tvSettingsFragment.text ?: "Error").toString()
                 )
-                findNavController().navigate(R.id.action_settingsFragment_to_testForCatFragment,
-                    bundle)
+                findNavController().navigate(
+                    R.id.action_settingsFragment_to_testForCatFragment,
+                    bundle
+                )
             }
         }
     }
@@ -31,5 +32,4 @@ class SettingsFragment: Fragment(R.layout.fragment_settings) {
         _binding = null
         super.onDestroyView()
     }
-
 }
