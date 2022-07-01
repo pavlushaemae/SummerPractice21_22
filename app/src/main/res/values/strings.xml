@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="count">Мы посчитаем, насколько Вы любите кошек.</string>
+    <string name="please">Пожалуйста, введите следующие данные.</string>
+    <string name="your_height">Ваш рост</string>
+    <string name="your_name">Ваше имя</string>
+    <string name="your_weight">Ваш вес</string>
+    <string name="your_age">Сколько Вам лет?</string>
+    <string name="touch_me">Сюда тыкать</string>
+    <string name="incorrect">Данные введены некорректно.</string>
 </resources>
