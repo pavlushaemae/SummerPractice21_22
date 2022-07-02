@@ -38,16 +38,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:hint="@string/your_height"
-        app:layout_constraintTop_toBottomOf="@+id/ti_name"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ti_name">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
             android:id="@+id/et_height"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:textColor="@color/button"
-            tools:ignore="MissingConstraints" />
+            android:textColor="@color/button" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -56,6 +56,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:hint="@string/your_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_please">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -63,8 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:textColor="@color/button"
-            tools:ignore="MissingConstraints" />
+            android:textColor="@color/button" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -73,6 +74,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:hint="@string/your_weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ti_height">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -80,8 +83,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
-            android:textColor="@color/button"
-            tools:ignore="MissingConstraints" />
+            android:textColor="@color/button" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -90,16 +92,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:hint="@string/your_age"
-        app:layout_constraintTop_toBottomOf="@+id/ti_weight"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ti_weight">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:textColor="@color/button"
-            tools:ignore="MissingConstraints" />
+            android:textColor="@color/button" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -111,8 +113,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_chponk"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ti_age"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/ti_age" />
 
     <Button
         android:id="@+id/btn_chponk"
