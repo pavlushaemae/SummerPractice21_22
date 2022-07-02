@@ -25,7 +25,7 @@ class SecondaryFragment: Fragment() {
 //        val text = args.myArg
 //        binding.tvName.text = "$text"
         val args by navArgs<SecondaryFragmentArgs>()
-        val text by lazy { args.myArg }
+        val text = args.myArgg
         binding.tvName.text = "$text"
     }
 
