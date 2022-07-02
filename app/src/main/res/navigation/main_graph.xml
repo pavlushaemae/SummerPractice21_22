@@ -10,8 +10,11 @@
         android:label="PrimaryFragment">
         <action
             android:id="@+id/action_primaryFragment_to_secondaryFragment"
-            app:destination="@id/secondaryFragment"/>
-        <argument android:name="MyArgg" />
+            app:destination="@id/secondaryFragment" />
+        <argument
+            android:name="MyArg1"
+            app:argType="integer"
+            app:nullable="false" />
     </fragment>
     <fragment
         android:id="@+id/secondaryFragment"
@@ -20,6 +23,9 @@
         <action
             android:id="@+id/action_secondaryFragment_to_primaryFragment"
             app:destination="@id/primaryFragment" />
-        <argument android:name="MyArg" />
+        <argument
+            android:name="MyArg"
+            app:argType="integer"
+            app:nullable="false" />
     </fragment>
 </navigation>

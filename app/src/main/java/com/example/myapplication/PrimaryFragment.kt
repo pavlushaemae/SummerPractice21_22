@@ -12,6 +12,7 @@ import com.example.myapplication.databinding.FragmentPrimaryBinding
 import com.example.myapplication.recycler.Planet
 import com.example.myapplication.recycler.PlanetAdapter
 import com.example.myapplication.recycler.PlanetRepository
+import com.example.myapplication.recycler.PlanetRepository.planets
 import com.example.myapplication.recycler.showSnackbar
 
 class PrimaryFragment : Fragment(R.layout.fragment_primary) {
@@ -32,7 +33,8 @@ class PrimaryFragment : Fragment(R.layout.fragment_primary) {
             PlanetRepository.planets,
             Glide.with(this)
         ) {
-            binding.root.findNavController().navigate(R.id.action_primaryFragment_to_secondaryFragment)
+            val action = PrimaryFragmentDirections.actionPrimaryFragmentToSecondaryFragment(it.id)
+            binding.root.findNavController().navigate(action)
         }
         binding.rvPlanet.adapter = adapter
 //        binding.rvPlanet.layoutManager = GridLayoutManager(requireContext(), 2)
