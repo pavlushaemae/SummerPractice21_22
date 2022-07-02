@@ -31,7 +31,7 @@ class PrimaryFragment : Fragment(R.layout.fragment_primary) {
     private fun initAdapter() {
         adapter = PlanetAdapter(
             PlanetRepository.planets,{
-                tototot
+                na
             })
 //
 //
