@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         controller =
             (supportFragmentManager.findFragmentById(R.id.container) as NavHostFragment)
                 .navController
-        val bottomView = findViewById<BottomNavigationView>(R.id.bottom_view)
-        bottomView.setupWithNavController(controller)
+//        val bottomView = findViewById<BottomNavigationView>(R.id.bottom_view)
+//        bottomView.setupWithNavController(controller)
     }
 }
