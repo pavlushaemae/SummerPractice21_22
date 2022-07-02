@@ -7,24 +7,23 @@ import com.bumptech.glide.RequestManager
 import com.example.myapplication.databinding.ItemPlanetBinding
 
 class PlanetAdapter(
-    private val list: List<Planet>,
+    private var list: List<Planet>,
     private val glide: RequestManager,
-    private val onItemClick:(Planet) -> Unit,
-): RecyclerView.Adapter<PlanetHolder>() {
+    private val onItemClick: (Planet) -> Unit,
+) : RecyclerView.Adapter<PlanetHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): PlanetHolder {
-        return PlanetHolder(
-            ItemPlanetBinding.inflate(
+    ): PlanetHolder =
+        PlanetHolder(
+            binding = ItemPlanetBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
             ),
-            glide,
-            onItemClick
+            glide = glide,
+            onItemClick = onItemClick
         )
-    }
 
     override fun onBindViewHolder(
         holder: PlanetHolder,

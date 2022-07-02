@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.bumptech.glide.Glide
@@ -11,7 +12,6 @@ import com.example.myapplication.databinding.FragmentPrimaryBinding
 import com.example.myapplication.recycler.Planet
 import com.example.myapplication.recycler.PlanetAdapter
 import com.example.myapplication.recycler.PlanetRepository
-
 
 class PrimaryFragment : Fragment(R.layout.fragment_primary) {
 
@@ -30,13 +30,9 @@ class PrimaryFragment : Fragment(R.layout.fragment_primary) {
             PlanetRepository.planets,
             Glide.with(this)
         ) {
-            findNavController().navigate(R.id.action_primaryFragment_to_secondaryFragment)
+            binding.root.findNavController().navigate(R.id.action_primaryFragment_to_secondaryFragment)
         }
-//
-//
         binding.rvPlanet.adapter = adapter
-//        binding.rvPlanet.layoutManager = GridLayoutManager(requireContext(), 2)
-
     }
 
 //    private fun initPref() {
@@ -49,5 +45,4 @@ class PrimaryFragment : Fragment(R.layout.fragment_primary) {
         super.onDestroyView()
         _binding = null
     }
-
 }
