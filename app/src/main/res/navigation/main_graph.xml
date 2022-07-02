@@ -7,17 +7,19 @@
     <fragment
         android:id="@+id/primaryFragment"
         android:name="com.example.myapplication.PrimaryFragment"
-        android:label="PrimaryFragment" >
+        android:label="PrimaryFragment">
         <action
             android:id="@+id/action_primaryFragment_to_secondaryFragment"
-            app:destination="@id/secondaryFragment" />
+            app:destination="@id/secondaryFragment"/>
+        <argument android:name="MyArgg" />
     </fragment>
     <fragment
         android:id="@+id/secondaryFragment"
         android:name="com.example.myapplication.SecondaryFragment"
-        android:label="SecondaryFragment" >
+        android:label="SecondaryFragment">
         <action
             android:id="@+id/action_secondaryFragment_to_primaryFragment"
             app:destination="@id/primaryFragment" />
+        <argument android:name="MyArg" />
     </fragment>
 </navigation>

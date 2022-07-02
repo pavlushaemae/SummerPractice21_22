@@ -12,6 +12,7 @@ import com.example.myapplication.databinding.FragmentPrimaryBinding
 import com.example.myapplication.recycler.Planet
 import com.example.myapplication.recycler.PlanetAdapter
 import com.example.myapplication.recycler.PlanetRepository
+import com.example.myapplication.recycler.showSnackbar
 
 class PrimaryFragment : Fragment(R.layout.fragment_primary) {
 
@@ -23,6 +24,7 @@ class PrimaryFragment : Fragment(R.layout.fragment_primary) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentPrimaryBinding.bind(view)
+        initAdapter()
     }
 
     private fun initAdapter() {
@@ -33,14 +35,16 @@ class PrimaryFragment : Fragment(R.layout.fragment_primary) {
             binding.root.findNavController().navigate(R.id.action_primaryFragment_to_secondaryFragment)
         }
         binding.rvPlanet.adapter = adapter
+//        binding.rvPlanet.layoutManager = GridLayoutManager(requireContext(), 2)
     }
 
-//    private fun initPref() {
-//        val pref = activity?.getSharedPreferences("TEST", Context.MODE_PRIVATE) ?: return
-//        val value = pref.getString("PREF_TEXT", "error").orEmpty()
-//        binding.root.showSnackbar(value)
-//    }
 
+    private fun initPref() {
+
+        val pref = activity?.getSharedPreferences("TEST", Context.MODE_PRIVATE) ?: return
+        val value = pref.getString("PREF_TEXT", "error").orEmpty()
+        binding.root.showSnackbar(value)
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

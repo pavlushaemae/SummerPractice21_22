@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/pavel/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/ic_planets_backgrpund_01_hq.xml" value="0.121" />
         <entry key="..\:/Users/pavel/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_primary.xml" value="0.176" />
         <entry key="..\:/Users/pavel/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_secondary.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/pavel/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/item_planet.xml" value="0.1" />
