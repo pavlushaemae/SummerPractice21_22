@@ -25,9 +25,11 @@ class SecondaryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val args by navArgs<SecondaryFragmentArgs>()
         val text = args.myArg
-        binding.tvName.text = "Name: ${planets[text].name}"
-        binding.tvDescription.text = "Description: ${planets[text].description}"
-        Glide.with(this).load(planets[text].url).into(binding.ivPicture)
+        with(binding) {
+            tvName.text = "Name: ${planets[text].name}"
+            tvDescription.text = "Description: ${planets[text].description}"
+            Glide.with(this@SecondaryFragment).load(planets[text].url).into(ivPicture)
+        }
     }
 
     override fun onDestroyView() {
