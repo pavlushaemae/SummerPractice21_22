@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/primaryFragment">
+
+    <fragment
+        android:id="@+id/primaryFragment"
+        android:name="com.example.myapplication.PrimaryFragment"
+        android:label="PrimaryFragment">
+        <action
+            android:id="@+id/action_primaryFragment_to_secondaryFragment"
+            app:destination="@id/secondaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondaryFragment"
+        android:name="com.example.myapplication.SecondaryFragment"
+        android:label="SecondaryFragment">
+        <action
+            android:id="@+id/action_secondaryFragment_to_primaryFragment"
+            app:destination="@id/primaryFragment" />
+        <argument
+            android:name="myArg"
+            app:argType="integer"
+            app:nullable="false" />
+    </fragment>
+</navigation>
