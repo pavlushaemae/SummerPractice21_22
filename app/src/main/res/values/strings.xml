@@ -8,4 +8,6 @@
     <string name="saturn_description">Saturn  is the sixth planet in terms of distance from the Sun and the second largest planet in the solar system after Jupiter . Saturn is classified as a gas giant planet . Saturn is named after the Roman god of agriculture . The symbol of Saturn  is .Go to the section "#Saturn in culture"</string>
     <string name="uranus_description">Uranus  is the planet of the solar system , the seventh in distance from the Sun , the third in diameter and the fourth in mass. It was discovered in 1781 by the English astronomer William Herschel and named after the Greek sky god Uranus .</string>
     <string name="neptune_description">Neptune  is the eighth and farthest planet from the Sun in the solar system . Its mass exceeds the mass of the Earth by 17.2 times and is the third among the planets of the solar system, and in terms of equatorial diameter , Neptune ranks fourth, surpassing the Earth by 3.9 times . The planet is named after Neptune, the Roman god of the seas  .</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
 </resources>

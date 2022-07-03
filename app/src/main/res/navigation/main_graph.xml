@@ -20,7 +20,7 @@
             android:id="@+id/action_secondaryFragment_to_primaryFragment"
             app:destination="@id/primaryFragment" />
         <argument
-            android:name="MyArgg"
+            android:name="myArg"
             app:argType="integer"
             app:nullable="false" />
     </fragment>
