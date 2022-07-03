@@ -33,9 +33,4 @@ class PlanetAdapter(
     }
 
     override fun getItemCount(): Int = list.size
-    fun updateData(newList: List<Planet>) {
-        list = newList
-        notifyDataSetChanged()
-    }
-
 }

@@ -1,6 +1,5 @@
 package com.example.myapplication
 
-import android.content.Context
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
@@ -9,7 +8,6 @@ import com.bumptech.glide.Glide
 import com.example.myapplication.databinding.FragmentPrimaryBinding
 import com.example.myapplication.recycler.PlanetAdapter
 import com.example.myapplication.recycler.PlanetRepository
-import com.example.myapplication.recycler.showSnackbar
 
 class PrimaryFragment : Fragment(R.layout.fragment_primary) {
     private var _binding: FragmentPrimaryBinding? = null
@@ -31,12 +29,6 @@ class PrimaryFragment : Fragment(R.layout.fragment_primary) {
             binding.root.findNavController().navigate(action)
         }
         binding.rvPlanet.adapter = adapter
-    }
-
-    private fun initPref() {
-        val pref = activity?.getSharedPreferences("TEST", Context.MODE_PRIVATE) ?: return
-        val value = pref.getString("PREF_TEXT", "error").orEmpty()
-        binding.root.showSnackbar(value)
     }
 
     override fun onDestroyView() {
